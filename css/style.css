@@ -3770,6 +3770,13 @@ ol {
 	margin-bottom: 35px;
 }
 
+.login-form2 h2 {
+	color: #252525;
+	font-weight: 700;
+	text-align: left;
+	margin-bottom: 15px;
+}
+
 .register-form form .group-input,
 .login-form form .group-input {
 	margin-bottom: 25px;
