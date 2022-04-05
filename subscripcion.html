@@ -25,11 +25,11 @@
 </head>
 
 <body>
-    <!-- Page Preloder -->
+    <!-- Page Preloder 
     <div id="preloder">
         <div class="loader"></div>
     </div>
-
+-->
     <!-- Header Section Begin -->
     <header class="header-section">
         <div class="header-top">
@@ -65,7 +65,7 @@
                     <div class="col-lg-7 col-md-7">
                         <div class="advanced-search">       <!--Buscar como mover el símbolo de búsqueda-->
                             <!-- <button type="button" class="category-btn">All Categories</button>-->
-                            <div class="input-group ">
+                            <div class="input-group col-lg-7 col-md-7">
                                 <input type="text" placeholder="What do you need?">
                                 <button type="button"><i class="ti-search"></i></button>
                             </div>
@@ -130,66 +130,85 @@
     </header>
     <!-- Header End -->
 
+    <!-- Breadcrumb Section Begin -->
+    <div class="breacrumb-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="breadcrumb-text">
+                        <a href="#"><i class="fa fa-home"></i> Home</a>
+                        <span>Subscripción</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Breadcrumb Section Begin -->
+
     <!-- Register Section Begin -->
     <div class="register-login-section spad">
         <div class="container">
             <div class="row">
                 <div class="col-lg-6 offset-lg-3">
-                    <div class="login-form">
-                        <h2>COMPRA REALIZADA!</h2>
+                    <div class="register-form">
+                        <h2>Formulario</h2>
+                        <form action="#">
+                            <div class="group-input">
+                                <label for="username">Nombres *</label>
+                                <input type="text" id="username">
+                            </div>
+                            <div class="group-input">
+                                <label for="pass">Apellidos *</label>
+                                <input type="text" id="pass">
+                            </div>
+                            <div class="group-input">
+                                <label for="con-pass">Monto a suscribir *</label>
+                                <div class="filter-widget">
+                                    <div class="fw-size-choose">
+                                        <div class="sc-item">
+                                            <input type="radio" id="s-size">
+                                            <label for="s-size">$2.500</label>
+                                        </div>
+                                        <div class="sc-item">
+                                            <input type="radio" id="m-size">
+                                            <label for="m-size">$5.000</label>
+                                        </div>
+                                        <div class="sc-item">
+                                            <input type="radio" id="l-size">
+                                            <label for="l-size">$10.000</label>
+                                        </div>
+                                        <div class="sc-item">
+                                            <input type="radio" id="xs-size">
+                                            <label for="xs-size">$25.000</label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="group-input">
+                                <label for="pass">Banco *</label>
+                                <input type="text" id="pass">
+                            </div>
+                            <div class="group-input">
+                                <label for="pass">Número de cuenta *</label>
+                                <input type="text" id="pass">
+                            </div>
+                            <div class="group-input gi-check">
+                                <div class="gi-more">
+                                    <label for="save-pass">
+                                        Acepto generar un mandato para programar transferencia
+                                        <input type="checkbox" id="save-pass">
+                                        <span class="checkmark"></span>
+                                    </label>
+                                </div>
+                            </div>
+                            <button type="submit" class="site-btn register-btn">SUSCRIBIR</button>
+                        </form>
                     </div>
                 </div>
             </div>
         </div>
-        <div class="container">
-            <div class="login-form2">
-                <h2>Detalle</h2>
-            </div>
-            <table class="table table-bordered table-striped">
-                <thead>
-                    <tr>
-                        <th scope="col">Producto</th>
-                        <th scope="col">Precio</th>
-                        <th scope="col">Cantidad</th>
-                        <th scope="col">Total</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td>Identificador para Mascota</td>
-                        <td>$10.000</td>
-                        <td>1</td>
-                        <td>$10.000</td>
-                    </tr>
-                    <tr>
-                        <td>Bandana Collar</td>
-                        <td>$2.000</td>
-                        <td>1</td>
-                        <td>$2.000</td>
-                    </tr>
-                    <tr>
-                        <td>Arnes con Correa para mascota</td>
-                        <td>$9.000</td>
-                        <td>1</td>
-                        <td>$9.000</td>
-                    </tr>
-                </tbody>
-            </table>
-        </div>
-    </div>
-    <div class="container">
-        <h3>Enviado a "Direccion"</h3><br>
-        <button type="button" class="btn btn-dark btn-lg">SEGUIMIENTO</button><br><br><br><br><br>
     </div>
     <!-- Register Form Section End -->
-
-    <!-- Partner Logo Section Begin -->
-    <!-- ELIMINADO BY CRIS-->
-    <!-- Partner Logo Section End -->
-
-    <!-- Footer Section Begin -->
-    <!--- ELIMINADO BY CRIS-->
-    <!-- Footer Section End -->
 
     <!-- Js Plugins -->
     <script src="js/jquery-3.3.1.min.js"></script>
