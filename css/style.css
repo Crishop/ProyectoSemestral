@@ -3264,7 +3264,7 @@ ol {
 
 .blog-details-inner .blog-detail-title p {
 	margin-bottom: 0;
-	font-size: 12px;
+	font-size: 20px; /*Size original de 12px*/
 	font-weight: 700;
 	text-transform: uppercase;
 	color: #e7ab3c;
