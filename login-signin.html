@@ -144,68 +144,72 @@
     </div>
     <!-- Breadcrumb Section Begin -->
 
-    <!-- Shopping Cart Section Begin -->
+    <!-- Login and Register -->
     <section class="checkout-section spad">
         <div class="container">
             <form action="#" class="checkout-form">
                 <div class="row">
                     <div class="col-lg-6">
                         <h4>Iniciar Sesion</h4>
+                        <form action="#" id="login">
                             <div class="row">
                                 <div class="col-lg-12">
-                                    <label for="direccion">Correo Electronico <span>*</span></label>
-                                    <input type="text">
+                                    <label for="correo">Correo Electronico <span>*</span></label>
+                                    <input type="email" name="correo" id="correo">
                                 </div>
                                 <div class="col-lg-12">
-                                    <label for="comuna">Contraseña<span>*</span></label>
-                                    <input type="password" id="zip">
+                                    <label for="contra">Contraseña<span>*</span></label>
+                                    <input type="password" id="contra" id="contra">
                                 </div>
                                 <div class="col-lg-12">
                                     <div class="create-item">
                                         <div class="checkout-content">
-                                            <a href="perfil_usuario.html" class="content-btn">Iniciar Sesion</a>
+                                            <input type="submit" value="Iniciar Sesion" id="iniciar">
                                         </div>
                                     </div>
                                 </div>
                             </div>
+                        </form>
                     </div>
                     <div class="col-lg-6">
                         <div class="place-order">
                             <h4>Crear Cuenta</h4>
+                            <form action="#" id="register">
                         <div class="row">
                             <div class="col-lg-6">
-                                <label for="fir">Primer Nombre<span>*</span></label>
-                                <input type="text" id="fir">
+                                <label for="firstname">Primer Nombre<span>*</span></label>
+                                <input type="text" name="firstname" id="firstname">
                             </div>
                             <div class="col-lg-6">
-                                <label for="last">Segundo Nombre</label>
-                                <input type="text" id="last">
+                                <label for="secondname">Segundo Nombre</label>
+                                <input type="text" name="secondname" id="secondname">
                             </div>
                             <div class="col-lg-6">
-                                <label for="fir-a">Apellido Paterno<span>*</span></label>
-                                <input type="text" id="fir">
+                                <label for="lastname">Apellido Paterno<span>*</span></label>
+                                <input type="text" name="lastname" id="lastname">
                             </div>
                             <div class="col-lg-6">
-                                <label for="last-a">Apellido Materno</label>
-                                <input type="text" id="last">
+                                <label for="lastname2">Apellido Materno</label>
+                                <input type="text" name="lastname2" id="lastname2">
                             </div>
                             
                             <div class="col-lg-6">
                                 <label for="email">Correo Electronico<span>*</span></label>
-                                <input type="text" id="email">
+                                <input type="text" name="email" id="email">
                             </div>
                             <div class="col-lg-6">
-                                <label for="phone">Contraseña<span>*</span></label>
-                                <input type="password" id="phone">
+                                <label for="password">Contraseña<span>*</span></label>
+                                <input type="password" name="password" id="password">
                             </div>
                             <div class="col-lg-12">
                                 <div class="create-item">
                                     <div class="checkout-content">
-                                        <a href="perfil_usuario.html" class="content-btn">Crear Cuenta</a>
+                                        <input type="submit" value="Crear Cuenta" id="crearcuenta"></input>
                                     </div>
                                 </div>
                             </div>
                         </div>
+                    </form>
                     </div>
                         </div>
                         </div>
@@ -281,6 +285,11 @@ Copyright &copy;<script>document.write(new Date().getFullYear());</script> All r
     </footer>
     <!-- Footer Section End -->
 
+    <!-- Jquery and Jquery Validation-->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/jquery-validation@1.19.3/dist/jquery.validate.min.js"></script>
+    <script src="js/validationSpanish.js"></script>
+    <script src="js/validation.js"></script>
     <!-- Js Plugins -->
     <script src="js/jquery-3.3.1.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
