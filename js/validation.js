@@ -37,19 +37,20 @@ $("#crearcuenta").click(function(){
 //Validacion de formulario de login
 $("#login").validate({
     rules: {
-        correo: {
+        correoLogin: {
             required: true,
             email: true
         },
-        contra: {
+        contraLogin: {
             required: true
         } 
     }
-})
+});
+
 $("#iniciar").click(function(){
     if($("#login").valid() == false){
         return;
     }
-    let correo = $("#correo").val()
-    let contra = $("#contra").val()
+    let correo = $("#correoLogin").val()
+    let contra = $("#contraLogin").val()
 });
