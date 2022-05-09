@@ -54,3 +54,30 @@ $("#iniciar").click(function(){
     let correo = $("#correoLogin").val()
     let contra = $("#contraLogin").val()
 });
+
+// Validacion de formulario de donar
+$("#donar").validate({
+    rules: {
+        nombres: {
+            required: true
+        },
+        apellidos: {
+            required: true
+        },
+        banco: {
+            required: true
+        },
+        cuenta: {
+            required: true
+        }
+    }
+});
+$("#suscribir").click(function(){
+    if($("#donar").valid() == false){
+        return;
+    }
+    let nombres = $("#nombres").val()
+    let apellidos = $("#apellidos").val()
+    let banco = $("#banco").val()
+    let cuenta = $("#cuenta").val()
+})
