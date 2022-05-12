@@ -22,6 +22,7 @@
     <link rel="stylesheet" href="css/jquery-ui.min.css" type="text/css">
     <link rel="stylesheet" href="css/slicknav.min.css" type="text/css">
     <link rel="stylesheet" href="css/style.css" type="text/css">
+    <link rel="stylesheet" href="css/validation.css" type="text/css">
 </head>
 
 <body>
@@ -152,14 +153,14 @@
                 <div class="col-lg-6 offset-lg-3">
                     <div class="login-form">
                         <h2>Formulario</h2>
-                        <form action="#">
+                        <form action="#" id="donar" autocomplete="on">
                             <div class="group-input">
-                                <label for="username">Nombres *</label>
-                                <input type="text" id="username">
+                                <label for="nombres">Nombres *</label>
+                                <input type="text" name="nombres" id="nombres">
                             </div>
                             <div class="group-input">
-                                <label for="pass">Apellidos *</label>
-                                <input type="text" id="pass">
+                                <label for="apellidos">Apellidos *</label>
+                                <input type="text" name="apellidos" id="apellidos">
                             </div>
                             <div class="group-input">
                                 <label for="con-pass">Monto a suscribir *</label>
@@ -185,23 +186,23 @@
                                 </div>
                             </div>
                             <div class="group-input">
-                                <label for="pass">Banco *</label>
-                                <input type="text" id="pass">
+                                <label for="banco">Banco *</label>
+                                <input type="text" name="banco" id="banco">
                             </div>
                             <div class="group-input">
-                                <label for="pass">Número de cuenta *</label>
-                                <input type="text" id="pass">
+                                <label for="cuenta">Número de cuenta *</label>
+                                <input type="text" name="cuenta" id="cuenta">
                             </div>
                             <div class="group-input gi-check">
                                 <div class="gi-more">
                                     <label for="save-pass">
                                         Acepto generar un mandato para programar transferencia
-                                        <input type="checkbox" id="save-pass">
+                                        <input type="checkbox" id="save-pass" name="save-pass">
                                         <span class="checkmark"></span>
                                     </label>
                                 </div>
                             </div>
-                            <button type="submit" class="site-btn register-btn">SUSCRIBIR</button>
+                            <button type="submit" class="site-btn register-btn" id="suscribir">SUSCRIBIR</button>
                         </form>
                     </div>
                 </div>
@@ -274,6 +275,11 @@ Copyright &copy;<script>document.write(new Date().getFullYear());</script> All r
     </footer>
     <!-- Footer Section End -->
 
+    <!-- Jquery and Jquery Validation-->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/jquery-validation@1.19.3/dist/jquery.validate.min.js"></script>
+    <script src="js/validationSpanish.js"></script>
+    <script src="js/validation.js"></script>
     <!-- Js Plugins -->
     <script src="js/jquery-3.3.1.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
